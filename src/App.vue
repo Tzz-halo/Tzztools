@@ -64,21 +64,23 @@ const uniqueTags = computed(() => {
 </script>
 
 <template>
-  <div>
-    <Hander @search="performSearch" />
+  <Hander @search="performSearch" />
+  <div class="container mx-auto px-4 flex flex-col mb-8">
     <!-- App.vue 动态生成标签 -->
-    <div class="mt-4 sm:mt-6 flex flex-wrap justify-center space-x-5 text-sm">
-      <a v-for="tag in uniqueTags" :key="tag" @click="filterByTag(tag)" :class="{
-        'bg-slate-700 text-white': selectedTag === tag,
-        'bg-slate-50 text-gray-400': selectedTag !== tag
-      }"
-        class="hover:bg-slate-200 w-auto mt-2 px-5 py-1 border border-transparent rounded-full text-base font-normal transition ease-in-out duration-300 cursor-pointer">
-        {{ tag }}{{ tag === '全部' ? `(${allTools.length})` : '' }}
-      </a>
-    </div>
+    <div>
+      <div class="mt-4 sm:mt-6 flex flex-wrap justify-center space-x-5 text-sm">
+        <a v-for="tag in uniqueTags" :key="tag" @click="filterByTag(tag)" :class="{
+          'bg-slate-700 text-white': selectedTag === tag,
+          'bg-slate-50 text-gray-400': selectedTag !== tag
+        }"
+          class="hover:bg-slate-200 w-auto mt-2 px-5 py-1 border border-transparent rounded-full text-base font-normal transition ease-in-out duration-300 cursor-pointer">
+          {{ tag }}{{ tag === '全部' ? `(${allTools.length})` : '' }}
+        </a>
+      </div>
 
-    <Tools :cards="filteredTools" />
-    <Footer></Footer>
+      <Tools :cards="filteredTools" />
+      <Footer></Footer>
+    </div>
   </div>
 </template>
 
