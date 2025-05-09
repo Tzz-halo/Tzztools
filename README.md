@@ -1,5 +1,25 @@
-# Vue 3 + Vite
+# 工具网站介绍
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 概述
+欢迎来到我们的工具网站，这是一个功能丰富、易于使用的在线工具集合平台。我们借鉴了流行的FUUN.FUN的设计理念，旨在为用户提供一个简洁而高效的用户体验。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 主要特性
+- **响应式设计**：无论是桌面还是移动设备，都能完美适配。
+- **丰富的工具集**：涵盖多种实用工具，包括但不限于计算器、日期转换器、编码解码器等。
+- **用户友好的界面**：清晰的操作指引和直观的布局，帮助用户快速上手。
+- **主题切换**：支持亮色和暗色模式，满足不同用户的偏好。
+
+## 技术栈
+- **前端框架**：Vue.js 3.x，结合Composition API和TypeScript，确保代码的可维护性和扩展性。
+- **状态管理**：Vuex用于集中管理应用的状态，简化组件间的通信。
+- **路由管理**：Vue Router实现单页应用的多视图导航。
+- **样式管理**：CSS-in-JS方案（例如styled-components），提高样式的模块化程度。
+- **构建工具**：Vite，提供更快的开发服务器启动速度和更优的构建性能。
+
+## 使用指南
+1. 访问网站主页。
+2. 根据左侧菜单选择所需的工具。
+3. 输入或上传数据，点击“计算”按钮查看结果。
+
+## 联系我们
+如果你有任何问题或建议，欢迎通过以下方式联系我们：
